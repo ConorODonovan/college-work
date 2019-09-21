@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1569087496 source:f:\coding\college work\c projects\histogram\main.c
+	<stdio.h>
+	<stdlib.h>
+
