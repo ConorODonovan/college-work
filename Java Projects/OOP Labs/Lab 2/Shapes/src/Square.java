@@ -1,9 +1,18 @@
 public class Square extends Shape {
 	
+	/**
+	 * Can take an argument for 'length' or default it to 5
+	 * Has method to calculate area
+	 */
+	
 	int length;
 	
 	protected Square(int l) {
 		length = l;
+	}
+	
+	protected Square() {
+		length = 5;
 	}
 	
 	protected Square(int l, int o) {

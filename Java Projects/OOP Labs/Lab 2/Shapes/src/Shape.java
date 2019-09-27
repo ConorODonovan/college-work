@@ -1,4 +1,9 @@
 abstract class Shape {
+	
+	/**
+	 * Can take an argument for 'opacity', or default it to 100
+	 */
+	
 	protected int opacity;
 	
 	public abstract double calcArea();

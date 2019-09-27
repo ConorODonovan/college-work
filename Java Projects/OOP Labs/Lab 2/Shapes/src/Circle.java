@@ -1,13 +1,22 @@
 public class Circle extends Shape {
 	
+	/**
+	 * Can take an argument for 'radius', or default it to 5
+	 * Has method to calculate area
+	 */
+	
 	int radius;
 	
-	public Circle() {
+	protected Circle() {
 		radius = 5;
 	}
 	
-	public Circle(int r) {
+	protected Circle(int r) {
 		radius = r;
+	}
+	
+	public int getRadius() {
+		return radius;
 	}
 	
 	public double calcArea() {
