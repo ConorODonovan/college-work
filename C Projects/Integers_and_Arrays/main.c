@@ -8,8 +8,8 @@ Conor O'Donovan
 
 // Function prototypes
 int sum_integers(int *list_integers);
-int largest_integer(int list_integers);
-int smallest_integer(int list_integers);
+int largest_integer(int *list_integers);
+int smallest_integer(int *list_integers);
 
 int main()
 {
@@ -26,6 +26,14 @@ int main()
     // Show the sum of the integers
     int sum_of_integers = sum_integers(&user_integers[0]);
     printf("\nSum of integers: %d\n", sum_of_integers);
+
+    // Show the largest integer in the array
+    int largest_num = largest_integer(&user_integers[0]);
+    printf("\nLargest integer: %d\n", largest_num);
+
+    // Show the smallest integer in the array
+    int smallest_num = smallest_integer(&user_integers[0]);
+    printf("\nSmallest integer: %d\n", smallest_num);
 
     return 0;
 }
@@ -48,14 +56,44 @@ parameter 1: the address of the first entry in the array
     return total;
 }
 
-int largest_integer(int list_integers);
-{
-
-}
-
-/*
-int smallest_integer(int list_integers);
-{
-
-}
+int largest_integer(int *list_integers)
+/**
+Find the largest integer in the array
+parameter 1: the address of the first entry in the array
 */
+
+{
+    int temp = *list_integers;
+    int i;
+
+    for (i = 0; i < 10; i++)
+    {
+        if (temp < *(list_integers + i))
+        {
+            temp = *(list_integers + i);
+        }
+    }
+
+    return temp;
+}
+
+int smallest_integer(int *list_integers)
+/**
+Find the smallest integer in the array
+parameter 1: the address of the first entry in the array
+*/
+
+{
+    int temp = *list_integers;
+    int i;
+
+    for (i = 0; i < 10; i++)
+    {
+        if (temp > *(list_integers + i))
+        {
+            temp = *(list_integers + i);
+        }
+    }
+
+    return temp;
+}
