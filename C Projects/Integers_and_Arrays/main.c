@@ -39,11 +39,11 @@ int main()
     // Show if array is symmetrical
     if (is_symmetrical(&user_integers[0]) == 1)
     {
-        printf("\nY\n");
+        printf("\nArray is symmetrical\n");
     }
     else
     {
-        printf("\nN\n");
+        printf("\nArray is not symmetrical\n");
     }
 
 
