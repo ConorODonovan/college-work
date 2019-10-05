@@ -10,6 +10,7 @@ Conor O'Donovan
 int sum_integers(int *list_integers);
 int largest_integer(int *list_integers);
 int smallest_integer(int *list_integers);
+int is_symmetrical(int *list_integers);
 
 int main()
 {
@@ -34,6 +35,17 @@ int main()
     // Show the smallest integer in the array
     int smallest_num = smallest_integer(&user_integers[0]);
     printf("\nSmallest integer: %d\n", smallest_num);
+
+    // Show if array is symmetrical
+    if (is_symmetrical(&user_integers[0]) == 1)
+    {
+        printf("\nY\n");
+    }
+    else
+    {
+        printf("\nN\n");
+    }
+
 
     return 0;
 }
@@ -96,4 +108,24 @@ parameter 1: the address of the first entry in the array
     }
 
     return temp;
+}
+
+int is_symmetrical(int *list_integers)
+/**
+Determine if the array is symmetrical
+*/
+
+{
+    int i;
+
+    for (i = 0; i < 5; i++)
+    {
+        if (*(list_integers + i) != *(list_integers + (9 - i))) // Compares first and last element, then second and second last element, etc.
+
+        {
+            return 0;
+        }
+    }
+
+    return 1;
 }
