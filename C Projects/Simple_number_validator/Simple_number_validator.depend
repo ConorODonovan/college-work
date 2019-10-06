@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1570377322 source:f:\coding\college work\c projects\simple_number_validator\main.c
+	<stdio.h>
+	<stdlib.h>
+
