@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1570647903 source:f:\coding\college work\c projects\countcharacterarray\main.c
+	<stdio.h>
+	<stdlib.h>
+
