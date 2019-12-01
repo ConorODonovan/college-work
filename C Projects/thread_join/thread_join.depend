@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1575219693 source:f:\coding\college work\c projects\thread_join\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+
